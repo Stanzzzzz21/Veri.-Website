@@ -32,42 +32,7 @@
 <i>Last Updated: 19 June 2026</i>
 <h2>1. Information We Collect</h2>
 Veri. only collects the minimum data required to provide security and verification features.
-This includes:
 
-User Data
-Discord User ID
-
-Verification status
-
-Captcha attempts (success/fail count)
-
-Honeypot triggers
-
-Timestamps of verification
-
-Server IDs where verification occurred
-
-Server Data
-Server ID
-
-Verification channel ID
-
-Honeypot channel ID
-
-Logs channel ID
-
-Verification role ID
-
-Admin role ID
-
-Server security settings
-
-Global Blacklist Data
-Discord User IDs of globally banned users
-
-Reason (honeypot trigger or manual action)
-
-Timestamp of blacklist entry
 
 <h2>2. How We Use This Data</h2>
 Veri. uses collected data only for:
@@ -89,13 +54,8 @@ Restoring server configuration after restarts
 We do not use data for advertising, profiling, or selling to third parties.
 
 <h2>3. Data Storage & Security</h2>
-All data is stored locally in Veri.’s private database (veri-data.json).
-
-No data is shared with external services.
-
-No data is transmitted outside Discord except for backups made by the owner.
-
-Only the bot owner has access to the raw data.
+All data is stored locally in Veri.’s database - MongoDB.
+Data is encrypted at rest and in transit.
 
 <h2>4. Data Retention</h2>
 Data is kept only as long as necessary for security purposes.

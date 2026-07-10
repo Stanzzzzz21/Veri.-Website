@@ -1,87 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Not Found</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>404</title>
 <link rel="icon" href="404.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: #050a0e;
-      color: #d1d1d1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    .container {
-      max-width: 500px;
-      padding: 20px;
-    }
+<style>
 
-    .code {
-      font-size: 72px;
-      font-weight: 700;
-      color: #23ff7a;
-      margin-bottom: 10px;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-    .title {
-      font-size: 22px;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #b6f7c8;
-    }
+body{
+    background:#1b1d20;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+}
 
-    .text {
-      font-size: 14px;
-      color: #9aa7a0;
-      margin-bottom: 25px;
-    }
+.container{
+    text-align:center;
+    max-width:700px;
+    padding:40px;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: rgba(35, 255, 122, 0.1);
-      border: 1px solid rgba(35, 255, 122, 0.4);
-      color: #23ff7a;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.2s;
-    }
+.logo{
+    font-size:60px;
+    font-weight:800;
+    color:#239823;
+    margin-bottom:15px;
+}
 
-    .btn:hover {
-      background: rgba(35, 255, 122, 0.2);
-      transform: translateY(-2px);
-    }
+.logo span{
+    color:white;
+}
 
-    .hint {
-      margin-top: 15px;
-      font-size: 12px;
-      color: #5f6b66;
-    }
-  </style>
+.error{
+    font-size:130px;
+    font-weight:800;
+    line-height:1;
+}
+
+h1{
+    font-size:55px;
+    margin-top:10px;
+}
+
+.green{
+    color:#239823;
+}
+
+p{
+    margin-top:20px;
+    color:#8c8c8c;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.buttons{
+    margin-top:45px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+a{
+    text-decoration:none;
+}
+
+.btn{
+    padding:14px 32px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.primary{
+    background:#239823;
+    color:white;
+}
+
+.primary:hover{
+    transform:translateY(-3px);
+}
+
+.secondary{
+    border:1px solid #444;
+    color:white;
+    background:#111;
+}
+
+.secondary:hover{
+    border-color:#239823;
+    color:#239823;
+}
+
+.line{
+    width:100%;
+    height:1px;
+    background:#3b3b3b;
+    margin:35px 0;
+}
+
+.footer{
+    margin-top:45px;
+    color:#5d5d5d;
+    font-size:14px;
+}
+
+</style>
+
 </head>
-
 <body>
 
-  <div class="container">
-    <div class="code">404</div>
-    <div class="title">Page not found</div>
-    <div class="text">
-      OOPS! This page could not be found. Please return via the buttons below!</div>
+<div class="container">
 
-    <a class="btn" href="https://www.stanzdev.uk/">Portfolio</a>
-    <a class="btn" href="https://veri.stanzdev.uk/">Veri.</a>
+<div class="logo">
+Veri<span>.</span>
+</div>
 
-    <div class="hint">&copy; Stanzdev • Route Error</div>
-  </div>
+<div class="line"></div>
+
+<div class="error">
+404
+</div>
+
+<h1>Page <span class="green">Not Found.</span></h1>
+
+<p>
+The page you're looking for doesn't exist, has been moved,
+or the URL may be incorrect.
+</p>
+
+<div class="buttons">
+<a href="/" class="btn primary">Return Home</a>
+
+</div>
+
+<div class="footer">
+Veri • 2026 • All Rights Reserved
+</div>
+
+</div>
 
 </body>
 </html>
